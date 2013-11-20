@@ -1,0 +1,7 @@
+c:\users\righteouscause\documents\visual studio 2010\Projects\MF\MF\bin\MF.dll
+c:\users\righteouscause\documents\visual studio 2010\Projects\MF\MF\bin\MF.pdb
+c:\users\righteouscause\documents\visual studio 2010\Projects\MF\MF\obj\Debug\ResolveAssemblyReference.cache
+c:\users\righteouscause\documents\visual studio 2010\Projects\MF\MF\obj\Debug\MF.dll
+c:\users\righteouscause\documents\visual studio 2010\Projects\MF\MF\obj\Debug\MF.pdb
+C:\Users\RighteousCause\documents\visual studio 2010\Projects\MF\MF\bin\App_Data\TurnamentDB.mdf
+C:\Users\RighteousCause\documents\visual studio 2010\Projects\MF\MF\bin\App_Data\TurnamentDB_log.ldf
