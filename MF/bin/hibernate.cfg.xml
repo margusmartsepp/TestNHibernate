@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+  <session-factory>
+    <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+    <property name="dialect">NHibernate.Dialect.PostgreSQLDialect</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.username">margusmartsepp</property>
+    <property name="connection.password">margusmartsepp</property>
+    <property name="connection.url">jdbc:postgresql://localhost:5432/hibernatedb</property>
+    <property name="connection_pool_size">1</property>
+    <property name="hbm2ddl.auto">create</property>
+    <property name="show_sql">true</property>
+  </session-factory>
+</hibernate-configuration>
