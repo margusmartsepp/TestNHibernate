@@ -51,7 +51,14 @@ namespace MF.Controllers
         {
             try
             {
+                var team1 = Team.GetTeamById(int.Parse(resultToEdit.ResultFirst.TeamName));
+                var team2 = Team.GetTeamById(int.Parse(resultToEdit.ResultSecond.TeamName));
+
                 var current = Result.GetResultById(id);
+                current.ResultFirst = team1;
+                current.ResultFirstScore = resultToEdit.ResultFirstScore;
+                current.ResultSecond = team2;
+                current.ResultSecondScore = resultToEdit.ResultSecondScore;
                 Result.Update(current);
                 return RedirectToAction("Index");
             }
