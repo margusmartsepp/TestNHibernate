@@ -13,7 +13,16 @@ namespace MF.Controllers
 
         public ActionResult Index()
         {
-            return View(Standing.Of());
+            return View();
+        }
+
+        public ActionResult GetStandings()
+        {
+            var result = Json(new{
+                aaData = Standing.Of().Select(
+                x => new IComparable[]{ x.TeamName, x.TeamW, x.TeamT, x.TeamL })
+            }, JsonRequestBehavior.AllowGet);
+            return result;
         }
     }
 }

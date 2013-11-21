@@ -148,6 +148,7 @@
     <Content Include="Views\Team\Delete.aspx" />
     <Content Include="Views\Team\Edit.aspx" />
     <Content Include="Views\Team\Index.aspx" />
+    <Content Include="Views\Top\Inde2x.aspx" />
     <Content Include="Views\Top\Index.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
