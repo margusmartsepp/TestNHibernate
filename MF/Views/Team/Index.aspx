@@ -4,7 +4,7 @@
 
     <table>
         <tr>
-            <th>TeamName</th>
+            <th>Team name</th>
             <th>Actions</th>
         </tr>
 

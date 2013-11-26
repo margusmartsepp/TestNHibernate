@@ -20,7 +20,7 @@ namespace MF.Controllers
         {
             var result = Json(new{
                 aaData = Standing.Of().Select(
-                x => new IComparable[]{ x.TeamName, x.TeamW, x.TeamT, x.TeamL })
+                x => new IComparable[]{ x.TeamName, x.TeamW, x.TeamD, x.TeamL, x.TeamF, x.TeamA })
             }, JsonRequestBehavior.AllowGet);
             return result;
         }

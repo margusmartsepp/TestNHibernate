@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using MF.Models.Entities;
+using MF.Models.Helper;
 
 namespace MF.Controllers
 {
@@ -23,7 +24,8 @@ namespace MF.Controllers
         {
             try
             {
-                Team.Add(teamToCreate);
+                var safe = new Team { TeamName = Methods.strSafe(teamToCreate.TeamName) };
+                Team.Add(safe);
                 return RedirectToAction("Index");
             }
             catch

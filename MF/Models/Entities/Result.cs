@@ -73,7 +73,11 @@ namespace MF.Models.Entities
             {
                 using (ITransaction transaction = session.BeginTransaction())
                 {
-                    session.Delete(result);
+                    var remove = Result.GetResultById(result.ResultId);
+                    remove.ResultFirst = null;
+                    remove.ResultSecond = null;
+                    session.Update(remove);
+                    session.Delete(remove);
                     transaction.Commit();
                 }
             }

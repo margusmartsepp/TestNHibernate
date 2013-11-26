@@ -84,6 +84,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ExportController.cs" />
+    <Compile Include="Controllers\ImportController.cs" />
     <Compile Include="Controllers\ResultController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Controllers\TopController.cs" />
@@ -140,6 +142,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Models\Mappings\XML exmple\Team.hbm.xml" />
+    <Content Include="Views\Export\Index.aspx" />
+    <Content Include="Views\Import\Index.aspx" />
     <Content Include="Views\Result\Create.aspx" />
     <Content Include="Views\Result\Delete.aspx" />
     <Content Include="Views\Result\Edit.aspx" />
@@ -148,7 +152,6 @@
     <Content Include="Views\Team\Delete.aspx" />
     <Content Include="Views\Team\Edit.aspx" />
     <Content Include="Views\Team\Index.aspx" />
-    <Content Include="Views\Top\Inde2x.aspx" />
     <Content Include="Views\Top\Index.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

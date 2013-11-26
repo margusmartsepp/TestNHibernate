@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MF.Models.Entities;
+using MF.Models.Helper;
+
 namespace MF.Controllers
 {
     public class ResultController : Controller
@@ -27,11 +29,15 @@ namespace MF.Controllers
         {
             try
             {
-                var team1 = Team.GetTeamById(int.Parse(resultToCreate.ResultFirst.TeamName));
-                var team2 = Team.GetTeamById(int.Parse(resultToCreate.ResultSecond.TeamName));
-                var newresult = new Result { 
-                    ResultFirst = team1, ResultFirstScore = resultToCreate.ResultFirstScore, 
-                    ResultSecond = team2, ResultSecondScore = resultToCreate.ResultSecondScore };
+                var team1 = Team.GetTeamById(Methods.intSafe(resultToCreate.ResultFirst.TeamName));
+                var team2 = Team.GetTeamById(Methods.intSafe(resultToCreate.ResultSecond.TeamName));
+                var newresult = new Result
+                {
+                    ResultFirst = team1,
+                    ResultFirstScore = resultToCreate.ResultFirstScore,
+                    ResultSecond = team2,
+                    ResultSecondScore = resultToCreate.ResultSecondScore
+                };
                 Result.Add(newresult);
                 return RedirectToAction("Index");
             }

@@ -44,9 +44,8 @@ Released   : 20081122
             <!-- end #logo -->
             <div id="menu">
                 <ul>
-                    <li class="first"><a href="/team">Teams</a></li>
-                    <li><a href="/result">Results</a></li>
-                    <li><a href="/result">Top</a></li>
+                    <li import><a href="/import">Import </a></li>
+                    <li><a href="/export">Export</a></li>
                 </ul>
             </div>
             <!-- end #menu -->
@@ -59,7 +58,7 @@ Released   : 20081122
                         <div class="post">
                             <div class="title">
                                 <h2>
-                                    <a href="#">Football turnament</a></h2>
+                                    <a href="#">Football tournament</a></h2>
                                 <p>
                                     Created by <a href="#">Margus Martsepp</a></p>
                             </div>

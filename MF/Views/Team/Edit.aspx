@@ -11,7 +11,7 @@
             <legend>Fields</legend>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.TeamName) %>
+                Team name
             </div>
             <div class="editor-field">
                 <%: Html.TextBoxFor(model => model.TeamName) %>

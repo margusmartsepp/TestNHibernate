@@ -27,10 +27,16 @@
                     W
                 </th>
                 <th>
-                    T
+                    D
                 </th>
                 <th>
                     L
+                </th>
+                <th>
+                    F
+                </th>
+                <th>
+                    A
                 </th>
             </tr>
         </thead>
@@ -39,4 +45,6 @@
         <tfoot>
         </tfoot>
     </table>
-</asp:Content>
+    <br/>
+    <p><strong>Keys</strong> - <strong>W</strong>: Wins, <strong>D</strong>: Draws,<strong> L</strong>: Losses, <strong>F</strong>: Goals Scored, <strong>A</strong>: Goals Against</p>
+    </asp:Content>
